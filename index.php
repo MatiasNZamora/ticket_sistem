@@ -1,10 +1,20 @@
+<?php
+    require_once("config/connection.php");
+    
+    if(isset($_POST["enviar"]) and $_POST["enviar"] == "si"){
+        require_once("models/Usuario.php");
+        $usuario = new Usuario();
+        $usuario -> login();
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <head lang="es">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Sistema de Tikets</>::Acceso</title>
+	<title>Sistema de Tikets </></title>
 
 	<link href="img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
 	<link href="img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
@@ -77,7 +87,7 @@
                         </div>
                     </div>
                     <input type="hidden" name="enviar" class="form-control" value="si">
-                    <button type="submit" class="btn btn-rounded">Acceder</button>
+                    <button type="submit" class="btn btn-rounded"> Acceder </button>
                 </form>
             </div>
         </div>
