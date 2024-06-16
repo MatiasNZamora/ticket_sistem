@@ -1,6 +1,6 @@
 
 function init(){
-    $("#ticket_form").on("submit",function(e){
+    $("#ticket_form").on("submit", function(e){
         guardaryeditar(e);	
     });
 }
@@ -27,8 +27,10 @@ $(document).ready(function() {
 });
 
 function guardaryeditar(e){
-    e.preventDefault();
+    e.preventDefault(); // para que no se dispare varias veces el boton
+    
     var formData = new FormData($("#ticket_form")[0]);
+
     if ($('#tick_descrip').summernote('isEmpty') || $('#tick_titulo').val()==''){
         swal("Advertencia!", "Campos Vacios", "warning");
     }else{
@@ -44,6 +46,7 @@ function guardaryeditar(e){
                 swal("Correcto!", "Registrado Correctamente", "success");
             }  
         }); 
+        
     }
 }
 

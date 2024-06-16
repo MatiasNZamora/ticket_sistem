@@ -18,7 +18,7 @@
                     exit();
                 
                 } else {
-                    $sql = "SELECT * FROM tm_usuarios WHERE usu_correo =? and usu_pass =? and estado=1;"; // hacemos la consulta sql a la DB.
+                    $sql = "SELECT * FROM tm_usuario WHERE usu_correo =? and usu_pass =? and estado=1;"; // hacemos la consulta sql a la DB.
                     $stmt = $conectar->prepare($sql);
                     $stmt -> bindValue(1, $correo);
                     $stmt -> bindValue(2, $pass); 

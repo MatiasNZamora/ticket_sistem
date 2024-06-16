@@ -42,7 +42,7 @@ if (isset($_SESSION["usu_id"])) {
                 <h5 class="m-t-lg with-border"> Ingresar Información </h5>
 
                 <div class="row">
-                    <form method="post" id="ticket_form">
+                    <form method="POST" id="ticket_form">
 
                         <input type="hidden" id="usu_id" name="usu_id" value="<?php echo $_SESSION["usu_id"] ?>">
 
@@ -50,7 +50,7 @@ if (isset($_SESSION["usu_id"])) {
                             <fieldset class="form-group">
                                 <label class="form-label semibold" for="exampleInput"> Categoria </label>
                                 <select id="cat_id" name="cat_id" class="form-control">
-                                    
+                                    <!-- categorias -->
                                 </select>
                             </fieldset>
                         </div>
