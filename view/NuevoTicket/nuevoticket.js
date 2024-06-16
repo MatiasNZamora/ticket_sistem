@@ -48,6 +48,6 @@ function guardaryeditar(e){
         }); 
         
     }
-}
+};
 
 init();
