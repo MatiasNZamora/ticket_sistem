@@ -32,7 +32,7 @@ function guardaryeditar(e){
     var formData = new FormData($("#ticket_form")[0]);
 
     if ($('#tick_descrip').summernote('isEmpty') || $('#tick_titulo').val()==''){
-        swal("Advertencia!", "Campos Vacios", "warning");
+        swal("Oops!", "Complete los campos vacios", "warning");
     }else{
         $.ajax({
             url: "../../controller/ticket.php?op=insert",
@@ -43,7 +43,7 @@ function guardaryeditar(e){
             success: function(datos){  
                 $('#tick_titulo').val('');
                 $('#tick_descrip').summernote('reset');
-                swal("Correcto!", "Registrado Correctamente", "success");
+                swal("Correcto!", "Ticket Registrado", "success");
             }  
         }); 
         

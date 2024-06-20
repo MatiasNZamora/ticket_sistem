@@ -21,7 +21,13 @@
 
         static public function ruta(){ 
             return "http://localhost/sistem-ticket/";
-        }
+        }        
+        
+        // static public function ruta(){ 
+        //     return "http://soporte.matiasnzamora.com.ar/";
+        // }
+
+        // probar ruta para deploy.
 
     };
 
