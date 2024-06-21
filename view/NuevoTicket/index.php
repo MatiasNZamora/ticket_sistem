@@ -5,7 +5,7 @@ if (isset($_SESSION["usu_id"])) {
 <!DOCTYPE html>
 <html>
 <?php require_once("../MainHead/head.php"); ?>
-<title>ZimTech</>::Nuevo Ticket</title>
+<title>ZimTech - Nuevo Ticket</title>
 </head>
 
 <body class="with-side-menu">

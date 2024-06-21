@@ -131,7 +131,7 @@
 
                     $output["tick_titulo"] = $row["tick_titulo"];
                     $output["tick_descrip"] = $row["tick_descrip"];
-
+                
                     if ($row["tick_estado"]=="Abierto"){
                         $output["tick_estado"] = '<span class="label label-pill label-success"> Abierto </span>';
                     }else{
@@ -153,6 +153,10 @@
             $ticket->insert_ticketdetalle($_POST["tick_id"], $_POST["usu_id"], $_POST["tickd_descrip"]);
         break;
 
+        case "update":
+            $ticket->update_ticket($_POST["tick_id"]);
+            $ticket->insert_ticketdetalle_cerrar($_POST["tick_id"], $_POST["usu_id"]);
+        break;
     };
 
 ?>

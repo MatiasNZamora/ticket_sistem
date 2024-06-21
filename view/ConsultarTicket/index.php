@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
     <?php require_once("../MainHead/head.php");?>
-	<title>ZimTech</>::Consultar Tickets</title>
+	<title>ZimTech - Consultar Tickets</title>
 </head>
 <body class="with-side-menu">
 

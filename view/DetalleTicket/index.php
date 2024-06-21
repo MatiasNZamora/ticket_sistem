@@ -5,7 +5,7 @@ if (isset($_SESSION["usu_id"])) {
     <!DOCTYPE html>
     <html>
     <?php require_once("../MainHead/head.php"); ?>
-    <title>ZimTech</>::Detalle Ticket</title>
+    <title>ZimTech - Detalle Ticket</title>
     </head>
 
     <body class="with-side-menu">
@@ -72,6 +72,7 @@ if (isset($_SESSION["usu_id"])) {
                     <!-- contenido de la converzacion  -->
                 </section>
 
+                <!-- pnldetalle se refiere al panel donde se escriben las dudas  -->
                 <div class="box-typical box-typical-padding" id="pnldetalle">
                     <p>
                         Ingrese su duda o consulta
