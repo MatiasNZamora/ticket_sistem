@@ -39,7 +39,7 @@
                                     <div>
                                         <div class="number" id="lbltotalabierto"></div>
                                         <div class="caption">
-                                            <div>Total de Tickets Abiertos</div>
+                                            <div>Tickets Abiertos</div>
                                         </div>
                                     </div>
                                 </article>
@@ -49,7 +49,7 @@
                                     <div>
                                         <div class="number" id="lbltotalcerrado"></div>
                                         <div class="caption">
-                                            <div>Total de Tickets Cerrados</div>
+                                            <div>Tickets Cerrados</div>
                                         </div>
                                     </div>
                                 </article>

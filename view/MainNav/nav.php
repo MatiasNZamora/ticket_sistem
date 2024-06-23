@@ -25,7 +25,7 @@
                 </ul>
             </nav>
         <?php
-    }else{
+    } else {
         ?>
             <nav class="side-menu">
                 <ul class="side-menu-list">
